@@ -31,7 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 CUSTOM_APPS = [
-    "users.apps.UsersConfig"
+    "common.apps.CommonConfig",
+    "users.apps.UsersConfig",
+    "tweets.apps.TweetsConfig",
 ] 
 
 SYSTEM_APPS = [
