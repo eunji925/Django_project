@@ -4,7 +4,7 @@ from .models import Tweet, Like
 
 @admin.register(Tweet)
 class TweetAdmin(admin.ModelAdmin):
-    list_display = ("payload", "user", "created_at", "updated_at",)
+    list_display = ("payload", "total_likes", "user", "created_at", "updated_at",)
     list_filter = ( "payload", "user", "created_at", "updated_at",)
 
 
