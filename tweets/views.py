@@ -11,7 +11,7 @@ def see_all_tweets(request):
     return render(
         request, 
         "all_tweets.html",
-        {"tweets" : tweets, "title": "All Tweets"}
+        {"tweets" : tweets, "title": "All Tweets"}  
     )
 
 class TweetListView(APIView):
